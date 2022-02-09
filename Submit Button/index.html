@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE-edge'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <title>Submit Button</title>
+        <link rel='stylesheet' type='text/css' href='style.css' media='screen'>
+    </head>
+    <body>
+        <button id="button" >Submit</button>
+        <div id="psuedo" ></div>
+        <svg id="tick-svg" x="0px" y="0px" viewBox="0 0 25 30" fill="none" >
+            <path id="tick" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,5"/>
+        </svg>
+    </body>
+    <script type="text/javascript">
+        const btn = document.getElementById("button")
+        const psuedo = document.getElementById("psuedo")
+        const tick = document.getElementById("tick")
+        const svg = document.getElementById("tick-svg")
+        btn.onclick = () => {
+            btn.classList.toggle("button1")
+            psuedo.classList.toggle("psuedo1")
+            tick.classList.toggle("tick1")
+            svg.classList.toggle("tick-svg1")
+        }
+    </script>
+</html>

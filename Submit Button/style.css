@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(19, 53, 53);
+}
+
+#button{
+    font-size: 1.6rem;
+    color: white;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(0, 33, 39);
+    border: none;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.button1{
+    animation: ani 6.5s ease-out forwards;
+    width: 40rem;
+    font-size: 0;
+    height: 1rem;
+    background-color: rgb(72, 92, 92);
+    border-radius: 10px;
+}
+@keyframes ani {
+    0%{
+        animation-timing-function: cubic-bezier(0, 0.51, 0, 1.29);
+    }
+    8%, 90%{
+        animation-timing-function: cubic-bezier(0, 0.51, 0, 1.29);
+        width: 41rem;
+        font-size: 0;
+        height: 1rem;
+        background-color: rgb(99, 150, 150);
+        border-radius: 10px;
+        animation-delay: 5s;
+    }
+    91%{
+        font-size: 0;
+        width: 0;
+        height: 0;
+    }
+    100%{
+        font-size: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+#psuedo{
+    position: absolute;
+}
+.psuedo1{
+    animation: ani1 5.5s ease-out 1s forwards;
+}
+@keyframes ani1{
+    0%{
+        width: 0;
+        height: 1rem;
+        border-radius: 5px;
+        background-color: rgb(0, 33, 39);
+    }
+    98%{
+        width: 42rem;
+        height: 1rem;
+        border-radius: 10px;
+        background-color: rgb(1, 44, 51);
+        animation-timing-function: cubic-bezier(0, 0.87, 0.51, 1.27);
+    }
+    100%{
+        animation-timing-function: ease-in;
+        font-size: 0;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+}
+
+
+#tick-svg{
+    position: absolute;
+    width: 0;
+    stroke: white;
+}
+.tick-svg1{
+    animation: tick-svg 0s 6.5s forwards;
+}
+@keyframes tick-svg{
+    to{
+        width: 80px;
+    }
+}
+.tick1{
+    animation: tick .4s ease-out 6.5s forwards;
+    stroke-dasharray: 40.85;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 40.85;
+}
+
+@keyframes tick{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
