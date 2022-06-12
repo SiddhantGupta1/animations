@@ -51,6 +51,16 @@ body{
     /* background-image: radial-gradient(circle at top, yellow , 70%,#000); */
 }
 
+.ballShadow{
+    position: absolute;
+    transform: translate(-50%, 49%) rotateX(90deg);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-image: radial-gradient(#000, #0000);
+    animation: shadowAnimation 1s infinite;
+}
+
 .floor{
     position: absolute;
     top: 1em;
@@ -83,4 +93,9 @@ body{
 @keyframes bounce {
     0%, 100%{top: -2em}
     50%{top: 0.1em; animation-timing-function: ease-out;}
+}
+
+@keyframes shadowAnimation {
+    0%, 100%{width: 0.2em;}
+    50%{width: 1em;}
 }
