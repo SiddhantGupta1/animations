@@ -24,7 +24,7 @@ body{
 }
 
 .button1{
-    animation: ani 6.5s ease-out forwards;
+    animation: ani 4.5s ease-out forwards;
     width: 40rem;
     font-size: 0;
     height: 1rem;
@@ -61,7 +61,7 @@ body{
     position: absolute;
 }
 .psuedo1{
-    animation: ani1 5.5s ease-out 1s forwards;
+    animation: ani1 3.5s ease-out 1s forwards;
 }
 @keyframes ani1{
     0%{
@@ -94,7 +94,7 @@ body{
     stroke: white;
 }
 .tick-svg1{
-    animation: tick-svg 0s 6.5s forwards;
+    animation: tick-svg 0s 4.5s forwards;
 }
 @keyframes tick-svg{
     to{
@@ -102,7 +102,7 @@ body{
     }
 }
 .tick1{
-    animation: tick .4s ease-out 6.5s forwards;
+    animation: tick .5s ease-out 4.5s forwards;
     stroke-dasharray: 40.85;
     stroke-linecap: round;
     stroke-linejoin: round;
